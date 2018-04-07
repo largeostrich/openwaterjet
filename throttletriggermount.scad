@@ -25,6 +25,7 @@
 //                technological measures that legally restrict others
 //                from doing anything the license permits.
 
+$fn=72;
 difference(){
     union(){
         cylinder(r=12.7,h=100,center=true);
