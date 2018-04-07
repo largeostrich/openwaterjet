@@ -1,0 +1,19 @@
+difference(){
+    union(){
+        cylinder(r=12.7,h=100,center=true);
+        translate([0,0,49.7])
+            cylinder(r=13.1,h=0.6,center=true);
+        hull(){
+            translate([0,0,-25])
+                cylinder(r=12.7,h=50,center=true);
+            translate([0,0,5])
+                scale([1,1,2])
+                    sphere(r=15,center=true);
+        };
+    };
+    translate([0,0,47.6])
+        cylinder(r1=5,r2=10,h=10,center=true);
+    translate([0,0,-47.6])
+        cylinder(r1=10,r2=5,h=10,center=true);
+    cylinder(r=5,h=110,center=true);
+};

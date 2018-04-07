@@ -20,13 +20,13 @@ rotate([270,0,0])
             cylinder(r=2.5,h=200, center=true);
         //tube holes
         translate([30,5,0])
-            cylinder(r=2.5,h=200, center=true);
+            cylinder(r=3,h=200, center=true);
         translate([-30,5,0])
-            cylinder(r=2.5,h=200, center=true);
+            cylinder(r=3,h=200, center=true);
         translate([30,-15,0])
-            cylinder(r=2.5,h=200, center=true);
+            cylinder(r=3,h=200, center=true);
         translate([-30,-15,0])
-            cylinder(r=2.5,h=200, center=true);
+            cylinder(r=3,h=200, center=true);
         //shaft holes
         cylinder(r=5,h=200, center=true);
         hull(){

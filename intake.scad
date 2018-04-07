@@ -56,30 +56,36 @@ module body () {
                     rotate([90,0,0])
                         cube([110,5,0.01], center=true);
             };
-            hull(){
-                translate([0,30,27.5])
-                    scale([1,0.7,1])
-                        cylinder(r=55,h=5, center=true);
-                translate([0,LENGTH/2-0.01,22.5])
-                        cube([110,0.01,15], center=true);
-                difference(){
-                    hull(){
-                        translate([20,110,20])
-                            rotate([0,0,0])
-                                scale([1,3,1])
-                                    sphere(r=20, center=true);
-                        translate([0,90,20])
-                            rotate([0,0,0])
-                                scale([1,3,1])
-                                    sphere(r=20, center=true);
-                        translate([-20,110,20])
-                            rotate([0,0,0])
-                                scale([1,3,1])
-                                    sphere(r=20, center=true);
+            intersection(){
+                hull(){
+                    translate([0,40,27.5])
+                        scale([1.4,0.7,1])
+                            cylinder(r=55,h=5, center=true);
+                    translate([0,LENGTH/2-0.01,25])
+                        rotate([0,90,0])
+                            scale([1,3,1])
+                                cylinder(r=15,h=110, center=true);
+                    difference(){
+                        hull(){
+                            translate([20,110,20])
+                                rotate([0,0,0])
+                                    scale([1,3,1])
+                                        sphere(r=20, center=true);
+                            translate([0,90,20])
+                                rotate([0,0,0])
+                                    scale([1,3,1])
+                                        sphere(r=20, center=true);
+                            translate([-20,110,20])
+                                rotate([0,0,0])
+                                    scale([1,3,1])
+                                        sphere(r=20, center=true);
+                        };
+                        translate([0,0,100])
+                            cube([200,400,160],center=true);
                     };
-                    translate([0,0,100])
-                        cube([200,400,160],center=true);
                 };
+                translate([0,LENGTH/4,15])
+                    cube([110,LENGTH/2,30],center=true);
             };
             //top
             translate([0,0,97.5])
@@ -173,25 +179,25 @@ module body () {
         //in
         translate([-30,-LENGTH/2,45])
             rotate([90,0,0])
-                cylinder(r=2.5,h=22,center=true);
+                cylinder(r=3,h=22,center=true);
         translate([-40,-80,27.5])
             rotate([120,0,0])
-                cylinder(r=2.5,h=30,center=true);
+                cylinder(r=3,h=30,center=true);
         //out
         translate([-30,0,65])
             rotate([90,0,0])
-                cylinder(r=2.5,h=LENGTH+2,center=true);
+                cylinder(r=3,h=LENGTH+2,center=true);
         //in
         translate([30,-LENGTH/2,45])
             rotate([90,0,0])
-                cylinder(r=2.5,h=22,center=true);
+                cylinder(r=3,h=22,center=true);
         translate([40,-80,27.5])
             rotate([120,0,0])
-                cylinder(r=2.5,h=30,center=true);
+                cylinder(r=3,h=30,center=true);
         //out
         translate([30,0,65])
             rotate([90,0,0])
-                cylinder(r=2.5,h=LENGTH+2,center=true);
+                cylinder(r=3,h=LENGTH+2,center=true);
         //shaft hole
         translate([0,0,50])
             rotate([90,0,0])
@@ -232,9 +238,10 @@ module body () {
                 cylinder(r=5,h=LENGTH+2,center=true);
     };
 }
+//use this code to select halves to print
 //rotate([-90,0,0])
-    intersection(){
+//    intersection(){
         body();
-        translate([0,55,0])
-            cube([200,LENGTH/2,250],center=true);
-    };
+//        translate([0,55,0])
+//            cube([200,LENGTH/2,250],center=true);
+//    };

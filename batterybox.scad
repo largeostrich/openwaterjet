@@ -1,0 +1,26 @@
+$fn=24;
+difference(){
+    union(){
+        cube([154,78,56],center=true);
+        
+    };
+    translate([0,17,5])
+        cube([144,24,56],center=true);
+    translate([0,-17,5])
+        cube([144,24,56],center=true);
+    translate([0,51,5])
+        cube([144,24,56],center=true);
+    translate([0,-51,5])
+        cube([144,24,56],center=true);
+    translate([0,85,5])
+        cube([144,24,56],center=true);
+    translate([0,-85,5])
+        cube([144,24,56],center=true);
+    for(i=[1:7]){
+        for(j=[1:7]){
+            translate([0,136-34*i,32-8*j])
+                rotate([0,90,0])
+                    cylinder(r=3,h=200,center=true);     
+        };
+    };
+};
