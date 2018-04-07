@@ -34,14 +34,14 @@ module fairing(){
                 translate([0,40,27.5])
                     scale([1.4,0.7,1])
                         cylinder(r=55,h=5, center=true);
-                translate([0,190,27.5])
-                    scale([1.4,0.7,1])
+                translate([0,110,27.5])
+                    scale([1.4,1.6,1])
                         cylinder(r=55,h=5, center=true);
                 translate([0,LENGTH/2-0.01,25])
                     rotate([0,90,0])
                         scale([1,3,1])
                             cylinder(r=15,h=110, center=true);
-                translate([0,LENGTH/2+34,25])
+                translate([0,LENGTH/2+24,25])
                     rotate([0,90,0])
                         scale([1,2,1])
                             cylinder(r=15,h=110, center=true);
@@ -57,11 +57,11 @@ module fairing(){
                                     sphere(r=20, center=true);
                         translate([20,134,20])
                             rotate([0,0,0])
-                                scale([1,3,1])
+                                scale([1,2,1])
                                     sphere(r=20, center=true);
                         translate([-20,134,20])
                             rotate([0,0,0])
-                                scale([1,3,1])
+                                scale([1,2,1])
                                     sphere(r=20, center=true);
                         translate([-20,110,20])
                             rotate([0,0,0])
@@ -75,11 +75,11 @@ module fairing(){
             translate([0,LENGTH/2,12.5])
                 cube([210,LENGTH,25],center=true);
         };
-        translate([55,0,0])
+        translate([-55,0,0])
             cube([220,600,500],center=true);
     };
 }
 //scale by -1 to flip this for opposite side
 //scale([-1,1,1])
-    rotate([0,90,0])
+    rotate([0,180,0])
         fairing();
