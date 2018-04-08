@@ -31,12 +31,12 @@ module throttlecontrol(){
         union(){
             translate([0,-10,0])
                 cube([18,140,10],center=true);
-            translate([0,60,9])
-                cube([18,20,28],center=true);
+            translate([0,60,4])
+                cube([18,20,18],center=true);
             translate([0,0,-3.5])
                 cube([38,120,3],center=true);
-            translate([0,-75,6])
-                cylinder(r=5,h=22,center=true);
+            translate([0,-77,4])
+                cylinder(r=3,h=12,center=true);
         };
         translate([0,10,2])
             cube([8,46,8],center=true);
@@ -44,12 +44,12 @@ module throttlecontrol(){
             cube([28,10,8],center=true);
         translate([10,-8,-6])
             cube([28,10,8],center=true);
-        translate([0,-75,8])
-            cylinder(r=2.5,h=22,center=true);
-        translate([0,65,12])
+        translate([0,-77,8])
+            cylinder(r=1.5,h=22,center=true);
+        translate([0,65,8])
             rotate([90,0,0])
                 cylinder(r=2.8,h=22,center=true);
-        translate([0,55,12])
+        translate([0,55,8])
             rotate([90,0,0])
                 cylinder(r=1.5,h=22,center=true);
     };
