@@ -45,6 +45,14 @@ module fairing(){
                     rotate([0,90,0])
                         scale([1,2,1])
                             cylinder(r=15,h=110, center=true);
+                translate([0,LENGTH/2-0.01,45])
+                    rotate([0,90,0])
+                        scale([1,3,1])
+                            cylinder(r=15,h=220, center=true);
+                translate([0,LENGTH/2+24,45])
+                    rotate([0,90,0])
+                        scale([1,2,1])
+                            cylinder(r=15,h=220, center=true);
                 difference(){
                     hull(){
                         translate([20,110,20])
