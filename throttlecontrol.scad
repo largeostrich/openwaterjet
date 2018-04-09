@@ -36,7 +36,7 @@ module throttlecontrol(){
             translate([0,0,-3.5])
                 cube([38,120,3],center=true);
             translate([0,-77,4])
-                cylinder(r=3,h=12,center=true);
+                cylinder(r=3,h=10,center=true);
         };
         translate([0,10,2])
             cube([8,46,8],center=true);
