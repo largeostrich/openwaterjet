@@ -26,7 +26,7 @@
 //                from doing anything the license permits.
 
 $fn=72;
-EXIT=80;
+EXIT=70;
 difference(){
     union(){
         hull(){
