@@ -43,7 +43,7 @@ This Bill of Materials is incomplete at the moment and is designed to give a vag
 * **Motor Watercooling jacket** - of the correct size for your motor
   * Example: [Turnigy XK Brushless Motor Water Cooling Jacket 4074](https://hobbyking.com/en_us/turnigy-xk-brushless-motor-water-cooling-jacket-4074-40-50mm-purple.html)
 * Optional - **ESC Cooling Plate**
-  * Example: [ESC Cooling Plate]](https://www.ebay.co.uk/i/263228653331?chn=ps&dispItem=1&adgroupid=53235196040&rlsatarget=pla-399367060529&abcId=1130076&adtype=pla&merchantid=116485770&poi=&googleloc=1006900&device=c&campaignid=1029943365&crdt=0)
+  * Example: [ESC Cooling Plate](https://www.ebay.co.uk/i/263228653331?chn=ps&dispItem=1&adgroupid=53235196040&rlsatarget=pla-399367060529&abcId=1130076&adtype=pla&merchantid=116485770&poi=&googleloc=1006900&device=c&campaignid=1029943365&crdt=0)
 * 4 x **M5 x 60 mm A4 Stainless Steel Machine Screws** - A2 Stainless may be fine for fresh water only applications
   * Example: [M5 x 60 mm, box of 50](http://uk.farnell.com/tr-fastenings/m5-60-m7a2mc-s50-but-3-0a-f/screw-button-head-hex-socket-m5/dp/2846552) - Your local marine chandlery may be able to supply small numbers of these for significantly less
 * 14 x **M5 x 30 mm A4 Stainless Steel Machine Screws** - A2 Stainless may be fine for fresh water only applications
