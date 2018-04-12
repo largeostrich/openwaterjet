@@ -1,6 +1,6 @@
 # Bill of Materials
 
-This Bill of Materials is incomplete at the moment and is designed to give a vague indication of the parts I intend to use. As I haven't actually built this yet, I can't guarantee the parts mentioned here work as intended with this setup. This project has been designed to allow for the use of any number of jet drive units next to each other, so parts are divided in to per drive unit and per whole setup. It is possible for both clockwise and anticlockwise propellers to be used if the nozzle is reflected when printing, since the stators are directional in this part.
+This Bill of Materials is incomplete at the moment and is designed to give a vague indication of the parts I intend to use. As I haven't actually built this yet, I can't guarantee the parts mentioned here work as intended with this setup. This project has been designed to allow for the use of any number of jet drive units next to each other, so parts are divided in to per drive unit and per whole setup. It is possible for both clockwise and anticlockwise propellers to be used if the nozzle is reflected when printing, since the stators are directional in this part. Links are mostly for UK suppliers, other local suppliers may be available for other countries.
 
 ## For Jet Units alone
 ### 3D Printed components from this repository
@@ -8,8 +8,8 @@ This Bill of Materials is incomplete at the moment and is designed to give a vag
 * 2 x **fairings.scad**, one reflected
 #### Per Drive Unit
 * optional - 1 x **batterybox.scad** - for using pairs of 3s 5000 mAh batteries
-* 1 x **motormount.scad**
-* 1 x front half of **intake.scad** - see file for details on how to select halves
+* 1 x **motormount.scad**, contains two sets of watercooling holes, remove one side if only one required
+* 1 x front half of **intake.scad** - see file for details on how to select halves, contains two sets of watercooling holes, remove one side if only one required
 * 1 x rear half of **intake.scad**
 * 1 x **propspace.scad**
 * 1 x **nozzle.scad** - reflect based on direction of propeller rotation, nozzle exit diameter adjustable to suit application
@@ -26,3 +26,28 @@ This Bill of Materials is incomplete at the moment and is designed to give a vag
 * 1 x **Brushless Drive Motor**, 6S, this setup was designed to use 3kw inrunner motors at about a 2000kv speed.
   * Example: [Turnigy XK-4074 2000KV Brushless Inrunner](https://hobbyking.com/en_us/turnigy-xk-4074-2000kv-brushless-inrunner.html)
 ### Hardware
+#### Per Whole Setup
+* **Appropriate Amount of Wire**, check wire gauge is capable of carrying the required current
+  * Example: [4 AWG Wire](http://uk.farnell.com/pro-power/pp001194/tri-rated-wire-25mm2-black-1m/dp/2528090?st=4AWG%20PTFE%20Hook%20Up%20Wire%20-%20Single%20Conductor)
+* **Appropriate Amount of Cooling Tube**
+  * Example: [5.5 mm OD tube](https://www.ebay.co.uk/itm/FUEL-LINE-PIPE-3MM-2-5MM-2MM-STRIMMER-CHAINSAW-LEAF-BLOWER-BRUSHCUTTER/182449552230?hash=item2a7ad73b66:m:mXECM6T0kKO2MeQfwsezfJg)
+* **Male XT90 Battery Connector**, or otherwise, as appropriate
+  * Example: [XT90 Male Connectors Bag](https://hobbyking.com/en_us/nylonxt90connectorsmale-5pcs-bag.html)
+#### Per Drive Unit
+* **Propshaft to Motor Coupling**, as appropriate to your motor
+  * Example: [Graupner 5 mm coupling sleeve](https://www.cornwallmodelboats.co.uk/acatalog/couplings-solid.html)
+* **225 mm x 5 mm Dog Drive Propshaft**
+  * Example: [Ripmax Propeller Shaft w/Dog Drive 225mm](https://www.cornwallmodelboats.co.uk/acatalog/Ripmax-dog-drive.html)
+* **76 mm Dog Drive Propeller** - Consider using counter rotating prop on one side when multiple units used together
+  * Example: [Graupner 2317-76/76RH](https://modelmarinesupplies.co.uk/products.php?cat=37)
+* **Motor Watercooling jacket** - of the correct size for your motor
+  * Example: [Turnigy XK Brushless Motor Water Cooling Jacket 4074](https://hobbyking.com/en_us/turnigy-xk-brushless-motor-water-cooling-jacket-4074-40-50mm-purple.html)
+* Optional - **ESC Cooling Plate**
+  * Example: [ESC Cooling Plate]](https://www.ebay.co.uk/i/263228653331?chn=ps&dispItem=1&adgroupid=53235196040&rlsatarget=pla-399367060529&abcId=1130076&adtype=pla&merchantid=116485770&poi=&googleloc=1006900&device=c&campaignid=1029943365&crdt=0)
+* 4 x **M5 x 60 mm A4 Stainless Steel Machine Screws** - A2 Stainless may be fine for fresh water only applications
+  * Example: [M5 x 60 mm, box of 50](http://uk.farnell.com/tr-fastenings/m5-60-m7a2mc-s50-but-3-0a-f/screw-button-head-hex-socket-m5/dp/2846552) - Your local marine chandlery may be able to supply small numbers of these for significantly less
+* 14 x **M5 x 30 mm A4 Stainless Steel Machine Screws** - A2 Stainless may be fine for fresh water only applications
+  * Example: [M5 x 30 mm, box of 50](http://uk.farnell.com/tr-fastenings/m5-30-m4a2mc-s50-but-t25/screw-button-head-hex-socket-m5/dp/2846531)
+* 18 x **M5 Nylon Locking Nuts A4 Stainless Steel** - A2 Stainless may be fine for fresh water only applications
+  * Example: [M5 Locking Nuts, box of 50](http://uk.farnell.com/tr-fastenings/m5-n5a4-s50/nyloc-nut-s-s-a4-m5/dp/1420449)
+* Appropriate number of **Motor Mounting Screws** - these may be supplied with the motor
