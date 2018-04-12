@@ -29,8 +29,9 @@ This Bill of Materials is incomplete at the moment and is designed to give a vag
   * Example: [Turnigy XK-4074 2000KV Brushless Inrunner](https://hobbyking.com/en_us/turnigy-xk-4074-2000kv-brushless-inrunner.html)
 ### Hardware
 #### Per Whole Setup
-* **Appropriate Amount of Wire**, check wire gauge is capable of carrying the required current
+* Appropriate Amount of **Power Carrying Wire**, check wire gauge is capable of carrying the required current
   * Example: [4 AWG Wire](http://uk.farnell.com/pro-power/pp001194/tri-rated-wire-25mm2-black-1m/dp/2528090?st=4AWG%20PTFE%20Hook%20Up%20Wire%20-%20Single%20Conductor)
+* Appropriate Amount of **Control Wire**, lighter stuff for your control circuits etc.
 * **Appropriate Amount of Cooling Tube**
   * Example: [5.5 mm OD tube](https://www.ebay.co.uk/itm/FUEL-LINE-PIPE-3MM-2-5MM-2MM-STRIMMER-CHAINSAW-LEAF-BLOWER-BRUSHCUTTER/182449552230?hash=item2a7ad73b66:m:mXECM6T0kKO2MeQfwsezfJg)
 * 1 x **Male XT90 Battery Connector**, or otherwise, as appropriate
