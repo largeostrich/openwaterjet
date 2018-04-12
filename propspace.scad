@@ -25,7 +25,7 @@
 //                technological measures that legally restrict others
 //                from doing anything the license permits.
 
-THICKNESS=14;
+THICKNESS=24;
 $fn=360;
 difference(){
     union(){
