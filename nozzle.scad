@@ -25,6 +25,8 @@
 //                technological measures that legally restrict others
 //                from doing anything the license permits.
 
+//This nozzle is designed for use with the standard 2317.76 propeller. To use with the 2317.76RH propeller, this design must be reflected.
+
 $fn=72;
 EXIT=70;
 difference(){
