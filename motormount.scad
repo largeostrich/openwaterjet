@@ -25,11 +25,13 @@
 //                technological measures that legally restrict others
 //                from doing anything the license permits.
 
+//this piece is the highest stressed piece of all: use appropriate print settings to reflect this
+
 rotate([270,0,0])
     difference(){
         union(){
             translate([0,-10,5])
-                cube([110,50,10], center=true);
+                cube([105,50,10], center=true);
             translate([0,0,46])
                 cube([50,30,8], center=true);
             translate([0,7.5,30])
