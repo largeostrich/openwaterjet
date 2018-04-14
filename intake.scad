@@ -47,9 +47,13 @@ module cavity () {
             translate([0,LENGTH,50])
                 cube([100,LENGTH,100], center=true);
         };
+        translate([0,-142.5,-0.5])
+            rotate([0,0,0])
+                scale([1,(60)/80,1])
+                    cylinder(r=40, h=1, center=true);
         translate([0,-45,-0.5])
             rotate([0,0,0])
-                scale([1,(LENGTH+35)/80,1])
+                scale([1,(255)/80,1])
                     cylinder(r=40, h=1, center=true);
     };
 }
@@ -69,9 +73,9 @@ module body () {
                     rotate([0,0,0])
                         scale([1,(LENGTH-120)/80,1])
                             cylinder(r=40, h=1, center=true);
-                translate([0,-20,29.5])
+                translate([0,-80,29.5])
                     rotate([0,0,0])
-                        scale([1,(LENGTH-40)/80,1])
+                        scale([1,(LENGTH-160)/80,1])
                             cylinder(r=40, h=1, center=true);
             };
             //base
@@ -207,7 +211,7 @@ module body () {
         translate([-30,-LENGTH/2,45])
             rotate([90,0,0])
                 cylinder(r=3,h=22,center=true);
-        translate([-40,-80,27.5])
+        translate([-45,-85,27.5])
             rotate([120,0,0])
                 cylinder(r=3,h=30,center=true);
         //out
@@ -218,7 +222,7 @@ module body () {
         translate([30,-LENGTH/2,45])
             rotate([90,0,0])
                 cylinder(r=3,h=22,center=true);
-        translate([40,-80,27.5])
+        translate([45,-85,27.5])
             rotate([120,0,0])
                 cylinder(r=3,h=30,center=true);
         //out
