@@ -12,7 +12,7 @@ This Bill of Materials is incomplete at the moment and is designed to give a vag
 * 1 x front half of **intake.scad** - see file for details on how to select halves, contains two sets of watercooling holes, remove one side if only one required
 * 1 x rear half of **intake.scad**
 * 1 x **propspace.scad**
-* 1 x **nozzle.scad** - reflect based on direction of propeller rotation, nozzle exit diameter adjustable to suit application
+* 1 x **nozzle.scad** - designed for LH (anticlockwise) propellers - reflect for RH, nozzle exit diameter adjustable to suit application
 ### Electrical Components
 #### Per Whole Setup
 * 1 x **6S LiPo Battery** of your choice, 5000 mAh per drive unit and upwards recommended, check C rating to ensure it can deliver the required current.
@@ -41,7 +41,7 @@ This Bill of Materials is incomplete at the moment and is designed to give a vag
   * Example: [Graupner 5 mm coupling sleeve](https://www.cornwallmodelboats.co.uk/acatalog/couplings-solid.html)
 * 1 x **225 mm x 5 mm Dog Drive Propshaft**
   * Example: [Ripmax Propeller Shaft w/Dog Drive 225mm](https://www.cornwallmodelboats.co.uk/acatalog/Ripmax-dog-drive.html)
-* 1 x **76 mm Dog Drive Propeller** - Consider using counter rotating prop on one side when multiple units used together
+* 1 x **76 mm Dog Drive Propeller** - Consider using reverse rotating prop on one side when multiple units used together
   * Example: [Graupner 2317-76/76RH](https://modelmarinesupplies.co.uk/products.php?cat=37)
 * 1 x **Motor Watercooling jacket** - of the correct size for your motor
   * Example: [Turnigy XK Brushless Motor Water Cooling Jacket 4074](https://hobbyking.com/en_us/turnigy-xk-brushless-motor-water-cooling-jacket-4074-40-50mm-purple.html)
