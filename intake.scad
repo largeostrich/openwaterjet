@@ -233,6 +233,11 @@ module body () {
         translate([0,0,50])
             rotate([90,0,0])
                 cylinder(r=5,h=LENGTH+2,center=true);
+        //shaft sealing bit
+        translate([0,-110,50])
+            rotate([0,0,0])
+                scale([3,1,3])
+                    sphere(r=3, center=true);
         //through hole
         hull(){
             translate([0,-22.5,82.5])
