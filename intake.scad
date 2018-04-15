@@ -25,6 +25,8 @@
 //                technological measures that legally restrict others
 //                from doing anything the license permits.
 
+//half selection and rotation for printing at the bottom of this file
+
 $fn=72;
 LENGTH=220;
 module boundingbox (){
