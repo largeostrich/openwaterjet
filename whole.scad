@@ -51,9 +51,9 @@ module setup(){
         rotate([0,0,180])
             motormount();
     //propshaft
-    translate([0,-64,50])
+    translate([0,-60,50])
         rotate([90,0,0])
-            cylinder(r=2.5,h=360,center=true);
+            cylinder(r=2.5,h=380,center=true);
     translate([0,0,50])
         rotate([90,0,0])
             cylinder(r=5,h=225,center=true);
