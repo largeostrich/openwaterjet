@@ -25,8 +25,8 @@
 //                technological measures that legally restrict others
 //                from doing anything the license permits.
 
-THICKNESS=24;
-$fn=360;
+THICKNESS=14;
+$fn=72;
 module propspace(){
     difference(){
         union(){
