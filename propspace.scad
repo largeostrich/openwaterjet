@@ -27,27 +27,30 @@
 
 THICKNESS=24;
 $fn=360;
-difference(){
-    union(){
-        hull(){
-            translate([0,5,0])
-                cube([110,90,THICKNESS],center=true);
-            translate([-20,-30,0])
-                cylinder(r=20,h=THICKNESS,center=true);
-            translate([20,-30,0])
-                cylinder(r=20,h=THICKNESS,center=true);
-        };
-    }
-    cylinder(r=43,h=30,center=true);
-    translate([45,35,0])
-        cylinder(r=2.5,h=30,center=true);
-    translate([-45,35,0])
-        cylinder(r=2.5,h=30,center=true);
-    translate([48,-10,0])
-        cylinder(r=2.5,h=30,center=true);
-    translate([-48,-10,0])
-        cylinder(r=2.5,h=30,center=true);
-    translate([62.5,0,0])
-        rotate([90,0,0])
-            cylinder(r=2.5,h=130,center=true);
-};
+module propspace(){
+    difference(){
+        union(){
+            hull(){
+                translate([0,5,0])
+                    cube([110,90,THICKNESS],center=true);
+                translate([-20,-30,0])
+                    cylinder(r=20,h=THICKNESS,center=true);
+                translate([20,-30,0])
+                    cylinder(r=20,h=THICKNESS,center=true);
+            };
+        }
+        cylinder(r=40,h=30,center=true);
+        translate([45,35,0])
+            cylinder(r=2.5,h=30,center=true);
+        translate([-45,35,0])
+            cylinder(r=2.5,h=30,center=true);
+        translate([48,-10,0])
+            cylinder(r=2.5,h=30,center=true);
+        translate([-48,-10,0])
+            cylinder(r=2.5,h=30,center=true);
+        translate([62.5,0,0])
+            rotate([90,0,0])
+                cylinder(r=2.5,h=130,center=true);
+    };
+}
+propspace();
