@@ -28,7 +28,8 @@
 //This nozzle is designed for use with the standard 2317.76 propeller. To use with the 2317.76RH propeller, this design must be reflected.
 
 $fn=72;
-EXIT=70;
+EXIT=60;
+LENGTH=110;
 module nozzle(){
     difference(){
         union(){
@@ -44,13 +45,13 @@ module nozzle(){
                 cube([15,5,25],center=true);
             translate([-47.5,47.5,12.5])
                 cube([15,5,25],center=true);
-            translate([0,0,40])
-                cylinder(r1=46, r2=EXIT/2+1, h=80, center=true);
+            translate([0,0,LENGTH/2])
+                cylinder(r1=46, r2=EXIT/2+4, h=LENGTH, center=true);
             translate([0,0,15])
                 cylinder(r1=50, r2=43, h=10, center=true);
         };
-        translate([0,0,51])
-        cylinder(r2=EXIT/2,r1=40,h=102,center=true);
+        translate([0,0,LENGTH/2+1])
+        cylinder(r2=EXIT/2,r1=40,h=LENGTH+2,center=true);
         translate([47.5,47.5,17.5])
             rotate([90,0,0])
                 cylinder(r=2.5,h=30,center=true);

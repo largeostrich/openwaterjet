@@ -31,11 +31,6 @@ use <fairings.scad>;
 use <motormount.scad>;
 use <propspace.scad>;
 
-$fn=72;
-LENGTH=220;
-THICKNESS=14;
-EXIT=70;
-
 module setup(){
     intersection(){
         body();
