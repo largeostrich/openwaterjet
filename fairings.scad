@@ -34,8 +34,8 @@ module fairing(){
                 translate([0,40,27.5])
                     scale([1.4,0.7,1])
                         cylinder(r=55,h=5, center=true);
-                translate([0,110,27.5])
-                    scale([1.4,2.6,1])
+                translate([0,210,27.5])
+                    scale([1.4,4.6,1])
                         cylinder(r=55,h=5, center=true);
                 translate([0,LENGTH/2-0.01,25])
                     rotate([0,90,0])
@@ -80,8 +80,8 @@ module fairing(){
                         cube([200,400,160],center=true);
                 };
             };
-            translate([0,LENGTH/2,12.5])
-                cube([210,LENGTH,25],center=true);
+            translate([0,0,12.5])
+                cube([210,2*187,25],center=true);
         };
         translate([-55,0,0])
             cube([220,600,500],center=true);
