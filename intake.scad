@@ -53,9 +53,9 @@ module cavity () {
             rotate([0,0,0])
                 scale([1,(60)/80,1])
                     cylinder(r=40, h=1, center=true);
-        translate([0,-45,-0.5])
+        translate([0,60,-0.5])
             rotate([0,0,0])
-                scale([1,(255)/80,1])
+                scale([1.3,(55)/80,1])
                     cylinder(r=40, h=1, center=true);
     };
 }
@@ -78,6 +78,23 @@ module body () {
                 translate([0,-80,29.5])
                     rotate([0,0,0])
                         scale([1,(LENGTH-160)/80,1])
+                            cylinder(r=40, h=1, center=true);
+            };
+            hull(){
+                difference(){
+                    translate([0,LENGTH/2,50])
+                        scale([0.95,3,1])
+                            sphere(r=46, center=true);
+                    translate([0,LENGTH,50])
+                        cube([100,LENGTH,100], center=true);
+                };
+                translate([0,30,29.5])
+                    rotate([0,0,0])
+                        scale([1.15,(LENGTH-60)/80,1])
+                            cylinder(r=40, h=1, center=true);
+                translate([0,90,29.5])
+                    rotate([0,0,0])
+                        scale([1.15,(LENGTH-180)/80,1])
                             cylinder(r=40, h=1, center=true);
             };
             //base
