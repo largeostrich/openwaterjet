@@ -29,15 +29,18 @@ $fn=72;
 LENGTH=220;
 module fairing(){
     hull(){
-        translate([55,150,20])
+        translate([60,150,24.5])
             scale([1,4,1])
-                cylinder(r=4, h=10, center=true);
-        translate([55,160,-30])
+                cylinder(r=4, h=1, center=true);
+        translate([72,160,-34.5])
             scale([1,4,1])
-                cylinder(r=2, h=10, center=true);
-        translate([56,186.6,-5])
+                cylinder(r=2, h=1, center=true);
+        translate([61,186.6,24.5])
             scale([1,1,1])
-                cylinder(r=0.4, h=60, center=true);
+                cylinder(r=0.4, h=1, center=true);
+        translate([73,186.6,-34.5])
+            scale([1,1,1])
+                cylinder(r=0.4, h=1, center=true);
     };
     difference(){
         intersection(){
