@@ -31,16 +31,16 @@ module fairing(){
     hull(){
         translate([60,150,24.5])
             scale([1,4,1])
-                cylinder(r=4, h=1, center=true);
+                cylinder(r=3, h=1, center=true);
         translate([72,160,-34.5])
             scale([1,4,1])
-                cylinder(r=2, h=1, center=true);
+                cylinder(r=1.2, h=1, center=true);
         translate([61,186.6,24.5])
             scale([1,1,1])
-                cylinder(r=0.4, h=1, center=true);
+                cylinder(r=0.2, h=1, center=true);
         translate([73,186.6,-34.5])
             scale([1,1,1])
-                cylinder(r=0.4, h=1, center=true);
+                cylinder(r=0.2, h=1, center=true);
     };
     difference(){
         intersection(){
