@@ -48,7 +48,7 @@ module fairing(){
                 translate([0,40,27.5])
                     scale([1.4,0.7,1])
                         cylinder(r=55,h=5, center=true);
-                translate([0,210,27.5])
+                translate([0,280,27.5])
                     scale([1.4,4.6,1])
                         cylinder(r=55,h=5, center=true);
                 translate([0,LENGTH/2-0.01,25])
