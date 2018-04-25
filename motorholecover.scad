@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: CC-BY-SA-4.0
 //
-//collection of 3d components to demonstrate how they fit together
+//plate to cover holes which have to be cut to allow water jackets to fit
 //
 //Copyright (C) 2018 Peter Bennett <thelargeostrich@gmail.com>
 //
@@ -25,48 +25,19 @@
 //                technological measures that legally restrict others
 //                from doing anything the license permits.
 
-use <intake.scad>;
-use <nozzle.scad>;
-use <fairings.scad>;
-use <motormount.scad>;
-use <propspace.scad>;
-use <motorholecover.scad>;
-
-module setup(){
-    intersection(){
-        body();
-        cube([110,220,250],center=true);
+$fn=72;
+module cover(){
+    difference(){
+        hull(){
+            translate([0,0,0])
+                scale([3,4,1])
+                    sphere(r=10,center=true);
+            translate([0,80,0])
+                scale([0.01,6,1])
+                    sphere(r=10,center=true);
+        };
+        translate([0,0,-20])
+            cube([600,600,50],center=true);
     };
-    translate([0,117,50])
-        rotate([90,0,0])
-            propspace();
-    translate([0,124,50])
-        rotate([-90,180,0])
-            nozzle();
-    translate([0,-110,50])
-        rotate([0,0,180])
-            motormount();
-    //propshaft
-    translate([0,-60,50])
-        rotate([90,0,0])
-            cylinder(r=2.5,h=380,center=true);
-    translate([0,0,50])
-        rotate([90,0,0])
-            cylinder(r=5,h=225,center=true);
-    //motors
-    translate([0,-200,50])
-        rotate([90,0,0])
-            cylinder(r=20,h=80,center=true);
-    translate([0,-200,50])
-        rotate([90,0,0])
-            cylinder(r=23.5,h=50,center=true);
-    fairing();
-    translate([0,-250,30])
-        rotate([0,180,0])
-            cover();
 }
-translate([55,0,0])
-    setup();
-translate([-54.99,0,0])
-    scale([-1,1,1])
-        setup();
+cover();
