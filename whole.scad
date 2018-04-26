@@ -61,7 +61,7 @@ module setup(){
         rotate([90,0,0])
             cylinder(r=23.5,h=50,center=true);
     fairing();
-    translate([0,-250,30])
+    translate([0,-245,30])
         rotate([0,180,0])
             cover();
 }
