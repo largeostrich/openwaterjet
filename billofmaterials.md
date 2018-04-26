@@ -7,12 +7,13 @@ This Bill of Materials is incomplete at the moment and is designed to give a vag
 #### Per Whole Setup
 * 2 x **fairings.scad**, one reflected
 #### Per Drive Unit
-* optional - 1 x **batterybox.scad** - for using pairs of 3s 5000 mAh batteries
 * 1 x **motormount.scad**, contains two sets of watercooling holes, remove one side if only one required
 * 1 x front half of **intake.scad** - see file for details on how to select halves, contains two sets of watercooling holes, remove one side if only one required
 * 1 x rear half of **intake.scad**
 * 1 x **propspace.scad**
 * 1 x **nozzle.scad** - designed for LH (anticlockwise) propellers - reflect for RH, nozzle exit diameter adjustable to suit application
+* optional - 1 x **batterybox.scad** - for using pairs of 3s 5000 mAh batteries
+* optional - 1 x **motorholecover.scad** - for if your motors are so large that they require cutting holes in the base of your waterproof box
 ### Electrical Components
 #### Per Whole Setup
 * 1 x **6S LiPo Battery** of your choice, 5000 mAh per drive unit and upwards recommended, check C rating to ensure it can deliver the required current.
