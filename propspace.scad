@@ -25,8 +25,8 @@
 //                technological measures that legally restrict others
 //                from doing anything the license permits.
 
-THICKNESS=14;
-$fn=72;
+THICKNESS=42;
+$fn=180;
 module propspace(){
     difference(){
         union(){
@@ -39,15 +39,15 @@ module propspace(){
                     cylinder(r=20,h=THICKNESS,center=true);
             };
         }
-        cylinder(r=40,h=30,center=true);
+        cylinder(r=40,h=60,center=true);
         translate([45,35,0])
-            cylinder(r=2.5,h=30,center=true);
+            cylinder(r=2.5,h=60,center=true);
         translate([-45,35,0])
-            cylinder(r=2.5,h=30,center=true);
+            cylinder(r=2.5,h=60,center=true);
         translate([48,-10,0])
-            cylinder(r=2.5,h=30,center=true);
+            cylinder(r=2.5,h=60,center=true);
         translate([-48,-10,0])
-            cylinder(r=2.5,h=30,center=true);
+            cylinder(r=2.5,h=60,center=true);
         translate([62.5,0,0])
             rotate([90,0,0])
                 cylinder(r=2.5,h=130,center=true);
