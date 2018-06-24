@@ -37,10 +37,10 @@ module setup(){
         body();
         cube([110,220,250],center=true);
     };
-    translate([0,117,50])
+    translate([0,131,50])
         rotate([90,0,0])
             propspace();
-    translate([0,124,50])
+    translate([0,152,50])
         rotate([-90,180,0])
             nozzle();
     translate([0,-110,50])
