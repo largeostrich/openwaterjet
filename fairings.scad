@@ -48,14 +48,14 @@ module fairing(){
                 translate([0,40,27.5])
                     scale([1.4,0.7,1])
                         cylinder(r=55,h=5, center=true);
-                translate([0,280,27.5])
+                translate([0,380,27.5])
                     scale([1.4,4.6,1])
                         cylinder(r=55,h=5, center=true);
                 translate([0,LENGTH/2-0.01,25])
                     rotate([0,90,0])
                         scale([1,3,1])
                             cylinder(r=15,h=110, center=true);
-                translate([0,LENGTH/2+24,25])
+                translate([0,LENGTH/2+24+28,25])
                     rotate([0,90,0])
                         scale([1,2,1])
                             cylinder(r=15,h=110, center=true);
@@ -63,7 +63,7 @@ module fairing(){
                     rotate([0,90,0])
                         scale([1,3,1])
                             cylinder(r=15,h=220, center=true);
-                translate([0,LENGTH/2+24,45])
+                translate([0,LENGTH/2+24+28,45])
                     rotate([0,90,0])
                         scale([1,2,1])
                             cylinder(r=15,h=220, center=true);
@@ -77,11 +77,11 @@ module fairing(){
                             rotate([0,0,0])
                                 scale([1,3,1])
                                     sphere(r=20, center=true);
-                        translate([20,134,20])
+                        translate([20,162,20])
                             rotate([0,0,0])
                                 scale([1,2,1])
                                     sphere(r=20, center=true);
-                        translate([-20,134,20])
+                        translate([-20,162,20])
                             rotate([0,0,0])
                                 scale([1,2,1])
                                     sphere(r=20, center=true);
