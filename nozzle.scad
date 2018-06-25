@@ -108,4 +108,6 @@ module nozzle(){
                 cube([400,400,40],center=true);
         };
 }
-nozzle();
+//uncomment this line to invert the nozzle for the reverse prop
+//scale([-1,1,1])
+    nozzle();
