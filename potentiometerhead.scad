@@ -46,7 +46,7 @@ module head (){
             };
         };
         translate([0,0,2])
-            cube([2,5,7], center=true);
+            cube([2,5,17], center=true);
         translate([0,9,-2])
             cylinder(r=2.5,h=3,center=true);
         translate([0,-9,-2])
