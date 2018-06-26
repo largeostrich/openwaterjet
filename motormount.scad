@@ -28,17 +28,32 @@
 //this piece is the highest stressed piece of all: use appropriate print settings to reflect this
 
 module motormount(){
-    rotate([270,0,0])
         difference(){
             union(){
-                translate([0,-10,5])
-                    cube([105,50,10], center=true);
-                translate([0,0,46])
-                    cube([50,30,8], center=true);
-                translate([0,7.5,30])
-                    cube([50,15,40], center=true);
+                translate([0,-10,2.5])
+                    cube([105,50,5], center=true);
+                translate([0,0,31])
+                    cylinder(r=17.5,h=4,center=true);
+                translate([0,7.5,16.5])
+                    cube([50,25,33], center=true);
             }
+            //base
+            translate([0,20,2.5])
+                cube([205,10,205], center=true);
             //bolt holes
+            //to motor
+            translate([4,11,25])
+                cylinder(r=1.5,h=20, center=true);
+            translate([-4,11,25])
+                cylinder(r=1.5,h=20, center=true);
+            translate([4,-11,25])
+                cylinder(r=1.5,h=20, center=true);
+            translate([-4,-11,25])
+                cylinder(r=1.5,h=20, center=true);
+            translate([12.5,0,25])
+                cylinder(r=2,h=20, center=true);
+            translate([-12.5,0,25])
+                cylinder(r=2,h=20, center=true);
             //to intake
             translate([45,5,0])
                 cylinder(r=2.5,h=200, center=true);
@@ -60,11 +75,18 @@ module motormount(){
             //shaft holes
             cylinder(r=5,h=200, center=true);
             hull(){
-                translate([7,0,0])
-                    cylinder(r=10,h=84, center=true);
-                translate([-7,0,0])
-                    cylinder(r=10,h=84, center=true);
+                translate([10,0,17])
+                    cylinder(r=10,h=24, center=true);
+                translate([-10,0,17])
+                    cylinder(r=10,h=24, center=true);
+                translate([0,10,17])
+                    cylinder(r=10,h=24, center=true);
             };
+            translate([0,0,30])
+                cylinder(r=8,h=20, center=true);
+            translate([0,0,0])
+                cylinder(r=11,h=20, center=true);
         };
 }
-motormount();
+rotate([270,0,0])
+    motormount();

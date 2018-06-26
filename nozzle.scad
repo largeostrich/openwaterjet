@@ -55,15 +55,9 @@ module nozzle(){
         translate([47.5,47.5,17.5])
             rotate([90,0,0])
                 cylinder(r=2.5,h=30,center=true);
-        translate([47.5,45,17.5])
-            rotate([90,0,0])
-                cylinder(r=5,h=5,center=true,$fn=6);
         translate([-47.5,47.5,17.5])
             rotate([90,0,0])
                 cylinder(r=2.5,h=30,center=true);
-        translate([-47.5,45,17.5])
-            rotate([90,0,0])
-                cylinder(r=5,h=5,center=true,$fn=6);
         translate([45,35,0])
             cylinder(r=2.5,h=30,center=true);
         translate([-45,35,0])
