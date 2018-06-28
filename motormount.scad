@@ -32,23 +32,31 @@ module motormount(){
             union(){
                 translate([0,-10,2.5])
                     cube([105,50,5], center=true);
-                translate([0,0,31])
-                    cylinder(r=17.5,h=4,center=true);
-                translate([0,7.5,16.5])
-                    cube([50,25,33], center=true);
+                hull(){
+                    translate([0,7.5,31])
+                        cube([50,25,4],center=true);
+                    translate([0,0,31])
+                        cylinder(r=17.5,h=4,center=true);
+                };
+                hull(){
+                    translate([0,7.5,16.5])
+                        cube([50,25,33],center=true);
+                    translate([0,0,16.5])
+                        cylinder(r=17.5,h=33,center=true);
+                };
             }
             //base
             translate([0,20,2.5])
                 cube([205,10,205], center=true);
             //bolt holes
             //to motor
-            translate([4,11,25])
+            translate([11,6,25])
                 cylinder(r=1.5,h=20, center=true);
-            translate([-4,11,25])
+            translate([-11,6,25])
                 cylinder(r=1.5,h=20, center=true);
-            translate([4,-11,25])
+            translate([11,-6,25])
                 cylinder(r=1.5,h=20, center=true);
-            translate([-4,-11,25])
+            translate([-11,-6,25])
                 cylinder(r=1.5,h=20, center=true);
             //to intake
             translate([45,5,0])
@@ -75,13 +83,21 @@ module motormount(){
                     cylinder(r=10,h=24, center=true);
                 translate([-10,0,17])
                     cylinder(r=10,h=24, center=true);
+                translate([10,-20,17])
+                    cylinder(r=10,h=24, center=true);
+                translate([-10,-20,17])
+                    cylinder(r=10,h=24, center=true);
                 translate([0,10,17])
                     cylinder(r=10,h=24, center=true);
             };
             translate([0,0,30])
                 cylinder(r=8,h=20, center=true);
-            translate([0,0,0])
-                cylinder(r=11,h=20, center=true);
+            hull(){
+                translate([0,0,0])
+                    cylinder(r=11,h=20, center=true);
+                translate([0,-5.5,0])
+                    cube([11,11,20], center=true);
+            };
         };
 }
 rotate([270,0,0])
