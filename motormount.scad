@@ -91,7 +91,7 @@ module motormount(){
                     cylinder(r=10,h=24, center=true);
             };
             translate([0,0,30])
-                cylinder(r=8,h=20, center=true);
+                cylinder(r=6,h=20, center=true);
             hull(){
                 translate([0,0,0])
                     cylinder(r=11,h=20, center=true);
