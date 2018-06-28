@@ -50,10 +50,6 @@ module motormount(){
                 cylinder(r=1.5,h=20, center=true);
             translate([-4,-11,25])
                 cylinder(r=1.5,h=20, center=true);
-            translate([12.5,0,25])
-                cylinder(r=2,h=20, center=true);
-            translate([-12.5,0,25])
-                cylinder(r=2,h=20, center=true);
             //to intake
             translate([45,5,0])
                 cylinder(r=2.5,h=200, center=true);
