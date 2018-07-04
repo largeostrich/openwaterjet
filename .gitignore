@@ -1,4 +1,5 @@
 *.stl
 *.gcode
+*.gcode.gz
 board.scad
 tfoil.scad

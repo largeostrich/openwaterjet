@@ -26,25 +26,42 @@
 //                from doing anything the license permits.
 
 //this piece is the highest stressed piece of all: use appropriate print settings to reflect this
-
+$fn=72;
 module motormount(){
         difference(){
             union(){
-                translate([0,-10,2.5])
-                    cube([105,50,5], center=true);
                 hull(){
-                    translate([0,7.5,31])
-                        cube([50,25,4],center=true);
-                    translate([0,0,31])
-                        cylinder(r=17.5,h=4,center=true);
+                    translate([50,-10,2.5])
+                        rotate([90,0,0])
+                            cylinder(r=2.5,h=50,center=true);
+                    translate([-50,-10,2.5])
+                        rotate([90,0,0])
+                            cylinder(r=2.5,h=50,center=true);
                 };
                 hull(){
                     translate([0,7.5,16.5])
-                        cube([50,25,33],center=true);
+                        cube([55,25,33],center=true);
                     translate([0,0,16.5])
                         cylinder(r=17.5,h=33,center=true);
                 };
             }
+            //sides
+            hull(){
+                translate([27.5,-10,7.5])
+                    rotate([90,0,0])
+                        cylinder(r=2.5,h=50,center=true);
+                translate([27.5,-10,37.5])
+                    rotate([90,0,0])
+                        cylinder(r=2.5,h=50,center=true);
+            };
+            hull(){
+                translate([-27.5,-10,7.5])
+                    rotate([90,0,0])
+                        cylinder(r=2.5,h=50,center=true);
+                translate([-27.5,-10,37.5])
+                    rotate([90,0,0])
+                        cylinder(r=2.5,h=50,center=true);
+            };
             //base
             translate([0,20,2.5])
                 cube([205,10,205], center=true);
