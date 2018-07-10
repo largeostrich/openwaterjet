@@ -41,10 +41,10 @@ module nozzle(){
                 translate([20,-30,5])
                     cylinder(r=20,h=10,center=true);
             };
-            translate([47.5,47.5,12.5])
-                cube([15,5,25],center=true);
-            translate([-47.5,47.5,12.5])
-                cube([15,5,25],center=true);
+            translate([47.5,46.5,12.5])
+                cube([15,7,25],center=true);
+            translate([-47.5,46.5,12.5])
+                cube([15,7,25],center=true);
             translate([0,0,LENGTH/2])
                 cylinder(r1=46, r2=EXIT/2+1.2, h=LENGTH, center=true);
             translate([0,0,15])
