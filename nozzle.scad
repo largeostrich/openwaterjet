@@ -41,14 +41,22 @@ module nozzle(){
                 translate([20,-30,5])
                     cylinder(r=20,h=10,center=true);
             };
-            translate([47.5,46.5,12.5])
-                cube([15,7,25],center=true);
-            translate([-47.5,46.5,12.5])
-                cube([15,7,25],center=true);
+            hull(){
+                translate([47.5,46.5,12.5])
+                    cube([15,7,25],center=true);
+                translate([27.5,46.5,5])
+                    cube([55,7,10],center=true);
+            }
+            hull(){
+                translate([-47.5,46.5,12.5])
+                    cube([15,7,25],center=true);
+                translate([-27.5,46.5,5])
+                    cube([55,7,10],center=true);
+            }
             translate([0,0,LENGTH/2])
                 cylinder(r1=46, r2=EXIT/2+1.2, h=LENGTH, center=true);
             translate([0,0,15])
-                cylinder(r1=50, r2=43, h=10, center=true);
+                cylinder(r1=50, r2=42, h=10, center=true);
         };
         translate([0,0,LENGTH/2+1])
         cylinder(r2=EXIT/2,r1=40,h=LENGTH+2,center=true);
@@ -66,10 +74,10 @@ module nozzle(){
             cylinder(r=2.5,h=30,center=true);
         translate([-48,-10,0])
             cylinder(r=2.5,h=30,center=true);
-        translate([48,-10,15])
-            cylinder(r=6,h=10,center=true);
-        translate([-48,-10,15])
-            cylinder(r=6,h=10,center=true);
+        translate([56,-11.5,25])
+            cylinder(r=15,h=30,center=true);
+        translate([-56,-11.5,25])
+            cylinder(r=15,h=30,center=true);
     };
     translate([0,0,7.5])
         difference(){
@@ -82,17 +90,17 @@ module nozzle(){
                 rotate([0,0,30])
                     linear_extrude(height = 15, center = true, convexity = 100, twist = -8)
                         translate([0,0,4])
-                            scale(v=[0.3,24])
+                            scale(v=[0.3,21.5])
                                 circle(d=3.75,center=true);
                 rotate([0,0,90])
                     linear_extrude(height = 15, center = true, convexity = 100, twist = -8)
                         translate([0,0,4])
-                            scale(v=[0.3,24])
+                            scale(v=[0.3,21.5])
                                 circle(d=3.75,center=true);
                 rotate([0,0,150])
                     linear_extrude(height = 15, center = true, convexity = 100, twist = -8)
                         translate([0,0,4])
-                            scale(v=[0.3,24])
+                            scale(v=[0.3,21.5])
                                 circle(d=3.75,center=true);
             };
             translate([0,0,-7.5])
@@ -104,4 +112,4 @@ module nozzle(){
 }
 //uncomment this line to invert the nozzle for the reverse prop
 //scale([-1,1,1])
-    nozzle();
+nozzle();
