@@ -90,18 +90,18 @@ module nozzle(){
                 rotate([0,0,30])
                     linear_extrude(height = 15, center = true, convexity = 100, twist = -8)
                         translate([0,0,4])
-                            scale(v=[0.3,21.5])
-                                circle(d=3.75,center=true);
+                            scale(v=[0.5,25])
+                                circle(d=3.75,center=true,$fn=6);
                 rotate([0,0,90])
                     linear_extrude(height = 15, center = true, convexity = 100, twist = -8)
                         translate([0,0,4])
-                            scale(v=[0.3,21.5])
-                                circle(d=3.75,center=true);
+                            scale(v=[0.5,25])
+                                circle(d=3.75,center=true,$fn=6);
                 rotate([0,0,150])
                     linear_extrude(height = 15, center = true, convexity = 100, twist = -8)
                         translate([0,0,4])
-                            scale(v=[0.3,21.5])
-                                circle(d=3.75,center=true);
+                            scale(v=[0.5,25])
+                                circle(d=3.75,center=true,$fn=6);
             };
             translate([0,0,-7.5])
                 scale([1,1,3])
