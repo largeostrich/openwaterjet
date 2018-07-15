@@ -30,9 +30,9 @@ module cover(){
     difference(){
         hull(){
             translate([0,0,-10])
-                scale([5,8,2])
+                scale([5,7,2])
                     sphere(r=10,center=true);
-            translate([0,80,-10])
+            translate([0,20,-10])
                 scale([0.01,8,2])
                     sphere(r=10,center=true);
         };
