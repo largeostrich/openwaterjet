@@ -137,6 +137,7 @@ module body () {
                 translate([0,LENGTH/4,15])
                     cube([110,LENGTH/2,30],center=true);
             };
+            //box faces
             //top
             translate([0,0,97.5])
                 rotate([0,0,0])
@@ -226,25 +227,25 @@ module body () {
             rotate([0,0,0])
                 cylinder(r=2.5,h=22,center=true);
         //cooling hose holes
-        //in
+        //intake
         translate([-30,-LENGTH/2,45])
             rotate([90,0,0])
                 cylinder(r=3,h=22,center=true);
         translate([-45,-85,27.5])
             rotate([120,0,0])
                 cylinder(r=3,h=30,center=true);
-        //out
+        //outlet
         translate([-30,0,65])
             rotate([90,0,0])
                 cylinder(r=3,h=LENGTH+2,center=true);
-        //in
+        //intake
         translate([30,-LENGTH/2,45])
             rotate([90,0,0])
                 cylinder(r=3,h=22,center=true);
         translate([45,-85,27.5])
             rotate([120,0,0])
                 cylinder(r=3,h=30,center=true);
-        //out
+        //outlet
         translate([30,0,65])
             rotate([90,0,0])
                 cylinder(r=3,h=LENGTH+2,center=true);
@@ -257,7 +258,7 @@ module body () {
             rotate([0,0,0])
                 scale([3,1,3])
                     sphere(r=3, center=true);
-        //through hole
+        //centre plate through hole
         hull(){
             translate([0,-22.5,82.5])
                 rotate([0,90,0])

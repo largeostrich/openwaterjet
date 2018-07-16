@@ -30,6 +30,7 @@ $fn=72;
 module motormount(){
         difference(){
             union(){
+                //intake plate
                 hull(){
                     translate([50,-10,2.5])
                         rotate([90,0,0])
@@ -38,6 +39,7 @@ module motormount(){
                         rotate([90,0,0])
                             cylinder(r=2.5,h=50,center=true);
                 };
+                //body
                 hull(){
                     translate([0,7.5,16.5])
                         cube([55,25,33],center=true);
@@ -107,8 +109,10 @@ module motormount(){
                 translate([0,10,17])
                     cylinder(r=10,h=24, center=true);
             };
+            //shaft hole to motor
             translate([0,0,30])
                 cylinder(r=6,h=20, center=true);
+            //shaft hole to intake
             hull(){
                 translate([0,0,0])
                     cylinder(r=11,h=20, center=true);
