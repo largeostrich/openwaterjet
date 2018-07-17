@@ -29,10 +29,13 @@ $fn=72;
 module cover(){
     difference(){
         hull(){
-            translate([0,0,-10])
+            translate([0,-12,-10])
                 scale([5,7,2])
                     sphere(r=10,center=true);
-            translate([0,20,-10])
+            translate([12,20,-10])
+                scale([0.01,8,2])
+                    sphere(r=10,center=true);
+            translate([-12,20,-10])
                 scale([0.01,8,2])
                     sphere(r=10,center=true);
         };
