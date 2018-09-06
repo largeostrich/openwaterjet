@@ -44,24 +44,24 @@ module setup(){
         rotate([-90,180,0])
             nozzle();
     translate([0,-110,50])
-        rotate([0,0,180])
+        rotate([270,0,180])
             motormount();
     //propshaft
-    translate([0,-60,50])
+    translate([0,-30,50])
         rotate([90,0,0])
-            cylinder(r=2.5,h=380,center=true);
-    translate([0,0,50])
+            cylinder(r=2.5,h=300,center=true);
+    translate([0,-2.5,50])
         rotate([90,0,0])
             cylinder(r=5,h=225,center=true);
     //motors
-    translate([0,-200,50])
+    translate([0,-183,50])
         rotate([90,0,0])
             cylinder(r=20,h=80,center=true);
-    translate([0,-200,50])
+    translate([0,-183,50])
         rotate([90,0,0])
             cylinder(r=23.5,h=50,center=true);
     fairing();
-    translate([0,-245,30])
+    translate([0,-190,30])
         rotate([0,180,0])
             cover();
 }
