@@ -34,7 +34,7 @@ use <motorholecover.scad>;
 
 module setup(){
     intersection(){
-        body();
+        full();
         cube([110,220,250],center=true);
     };
     translate([0,131,50])
