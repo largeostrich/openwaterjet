@@ -25,7 +25,7 @@
 //                technological measures that legally restrict others
 //                from doing anything the license permits.
 
-use <intake.scad>;
+use <toroidalintake.scad>;
 use <nozzle.scad>;
 use <fairings.scad>;
 use <motormount.scad>;
