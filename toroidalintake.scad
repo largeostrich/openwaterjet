@@ -27,8 +27,24 @@
 
 //half selection and rotation for printing at the bottom of this file
 
-$fn=24;
+$fn=72;
 LENGTH=220;
+module curve(){
+    difference(){
+        translate([0,5,2.5])
+            square([14,40],center=true);
+        hull(){
+            translate([-7,15])
+                circle(r=15,center=true);
+            translate([93,50])
+                circle(r=15,center=true);
+            translate([-25,15])
+                    circle(r=15,center=true);
+        }
+        translate([20,0])
+            square([40,40],center=true);
+    }
+}
 module toroid (){
     translate([0,LENGTH/2,50])
         rotate([90,0,0])
@@ -61,15 +77,24 @@ module cavity () {
             translate([0,LENGTH,50])
                 cube([100,LENGTH,100], center=true);
         };
-        translate([0,-142.5,-0.5])
+        translate([0,-136,-0.5])
             rotate([0,0,0])
-                scale([1,(60)/80,1])
+                scale([1,0.75,1])
                     cylinder(r=40, h=1, center=true);
         translate([0,60,-0.5])
             rotate([0,0,0])
                 scale([1.3,(55)/80,1])
                     cylinder(r=40, h=1, center=true);
     };
+}
+module minkplate(){
+    translate([0,3.5,0])
+        intersection(){
+            scale([0.95,1,1])
+                cavity();
+            translate([0,-55,22.5])
+                cube([110,110,5],center=true);
+        }
 }
 module body(){
     //tube body
@@ -187,6 +212,12 @@ module full () {
     difference(){
         body();
         cavity ();
+        minkowski(){
+            minkplate();
+            rotate_extrude(convexity=10){
+                curve();
+            }
+        }
         //bolt holes
         //exit end
         translate([48,LENGTH/2,40])
