@@ -88,7 +88,7 @@ module cavity () {
     };
 }
 module minkplate(){
-    translate([0,3.5,0])
+    translate([0,4,0])
         intersection(){
             scale([0.95,1,1])
                 cavity();
