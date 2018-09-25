@@ -344,11 +344,12 @@ module full () {
             rotate([90,0,0])
                 cylinder(r=5,h=LENGTH+2,center=true);
     };
+    intersection(){
+        toroid();
+        body();
+    };
 }
-intersection(){
-    toroid();
-    body();
-};
+
 //use this code to select halves to print
 //change translate from positive to negative to select half
 //rotate([-90,0,0])
