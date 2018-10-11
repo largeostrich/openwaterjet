@@ -60,13 +60,10 @@ module setup(){
     translate([0,-183,50])
         rotate([90,0,0])
             cylinder(r=23.5,h=50,center=true);
-    fairing();
-    translate([0,-190,30])
-        rotate([0,180,0])
-            cover();
+//    fairing();
+//    translate([0,-190,30])
+//        rotate([0,180,0])
+//            cover();
 }
-translate([55,0,0])
+translate([0,0,0])
     setup();
-translate([-54.99,0,0])
-    scale([-1,1,1])
-        setup();
