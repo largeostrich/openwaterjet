@@ -227,24 +227,17 @@ module body () {
             rotate([0,0,0])
                 cylinder(r=2.5,h=22,center=true);
         //cooling hose holes
-        //intake
-        translate([-30,-LENGTH/2,45])
-            rotate([90,0,0])
-                cylinder(r=3,h=22,center=true);
-        translate([-45,-85,27.5])
-            rotate([120,0,0])
-                cylinder(r=3,h=30,center=true);
         //outlet
         translate([-30,0,65])
             rotate([90,0,0])
                 cylinder(r=3,h=LENGTH+2,center=true);
         //intake
-        translate([30,-LENGTH/2,45])
-            rotate([90,0,0])
-                cylinder(r=3,h=22,center=true);
-        translate([45,-85,27.5])
+        translate([42.5,-90,27.5])
             rotate([120,0,0])
-                cylinder(r=3,h=30,center=true);
+                cylinder(r=2,h=30,center=true);
+        translate([-42.5,-90,27.5])
+            rotate([120,0,0])
+                cylinder(r=2,h=30,center=true);
         //outlet
         translate([30,0,65])
             rotate([90,0,0])
@@ -293,6 +286,75 @@ module body () {
             rotate([90,0,0])
                 cylinder(r=5,h=LENGTH+2,center=true);
     };
+    //cooling tubes
+    difference(){
+        translate([30,-55,65])
+            rotate([90,0,0])
+                cylinder(r=3,h=190,center=true);
+        translate([30,-55,65])
+            rotate([90,0,0])
+                cylinder(r=1.5,h=190,center=true);
+    }
+    difference(){
+        translate([30,-126,45])
+            rotate([90,0,0])
+                cylinder(r=3,h=48,center=true);
+        translate([30,-126,45])
+            rotate([90,0,0])
+                cylinder(r=1.5,h=48,center=true);
+    }
+    difference(){
+        translate([-30,-55,65])
+            rotate([90,0,0])
+                cylinder(r=3,h=190,center=true);
+        translate([-30,-55,65])
+            rotate([90,0,0])
+                cylinder(r=1.5,h=190,center=true);
+    }
+    difference(){
+        translate([-30,-126,45])
+            rotate([90,0,0])
+                cylinder(r=3,h=48,center=true);
+        translate([-30,-126,45])
+            rotate([90,0,0])
+                cylinder(r=1.5,h=48,center=true);
+    }
+    intersection(){
+        translate([0,-51,25])
+            cube([110,102,50],center=true);
+        translate([37.5,-102,33.5]){
+            scale([1,1,1.15])
+                rotate([0,126.87,180]){
+                    difference(){
+                        rotate_extrude(convexity = 10, $fn = 100)
+                            translate([12.5, 0, 0])
+                                circle(r = 3);
+                        rotate_extrude(convexity = 10, $fn = 100)
+                            translate([12.5, 0, 0])
+                                circle(r = 1.5);
+                    }
+                }
+        }
+    }
+    scale([-1,1,1]){
+        intersection(){
+            translate([0,-51,25])
+                cube([110,102,50],center=true);
+            translate([37.5,-102,33.5]){
+                scale([1,1,1.15])
+                    rotate([0,126.87,180]){
+                        difference(){
+                            rotate_extrude(convexity = 10, $fn = 100)
+                                translate([12.5, 0, 0])
+                                    circle(r = 3);
+                            rotate_extrude(convexity = 10, $fn = 100)
+                                translate([12.5, 0, 0])
+                                    circle(r = 1.5);
+                        }
+                    }
+            }
+        }
+    }
 }
 //use this code to select halves to print
 //rotate([-90,0,0])

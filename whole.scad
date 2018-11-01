@@ -29,14 +29,12 @@ use <intake.scad>;
 use <nozzle.scad>;
 use <fairings.scad>;
 use <motormount.scad>;
+use <motor.scad>;
 use <propspace.scad>;
 use <motorholecover.scad>;
 
 module setup(){
-    intersection(){
-        body();
-        cube([110,220,250],center=true);
-    };
+    body();
     translate([0,131,50])
         rotate([90,0,0])
             propspace();
@@ -54,16 +52,14 @@ module setup(){
         rotate([90,0,0])
             cylinder(r=5,h=225,center=true);
     //motors
-    translate([0,-183,50])
-        rotate([90,0,0])
-            cylinder(r=20,h=80,center=true);
-    translate([0,-183,50])
-        rotate([90,0,0])
-            cylinder(r=23.5,h=50,center=true);
-//    fairing();
-//    translate([0,-190,30])
-//        rotate([0,180,0])
-//            cover();
+    translate([0,-180,50])
+        motor();
+    translate([0,-190,30])
+        rotate([0,180,0])
+            cover();
 }
-translate([0,0,0])
+translate([55,0,0])
     setup();
+translate([-54.99,0,0])
+    scale([-1,1,1])
+        setup();
