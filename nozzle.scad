@@ -27,37 +27,37 @@
 
 //This nozzle is designed for use with the standard 2317.76 propeller. To use with the 2317.76RH propeller, this design must be reflected.
 
-$fn=60;
+$fn=120;
 EXIT=57.5;
 LENGTH=100;
 module blade(){
     difference(){
         union(){
             hull(){
-                translate([0,20,5])
+                translate([1.5,20,5])
                     rotate([90,-10,0])
                         scale([1,1.5,1])
                             cylinder(r=3,h=41,center=true);
-                translate([3,20,1])
+                translate([4.5,20,1])
                     rotate([90,0,0])
                         cylinder(r=1,h=41,center=true);
             }
             hull(){
-                translate([0,20,5])
+                translate([1.5,20,5])
                     rotate([90,-10,0])
                         scale([1,1.5,1])
                             cylinder(r=3,h=41,center=true);
-                translate([-2,20,15])
+                translate([-0.5,20,15])
                     rotate([90,0,0])
                         cylinder(r=1,h=41,center=true);
             }
         };
-        translate([0,20,11])
+        translate([1.5,20,11])
             rotate([90,-14,0])
                 scale([1,5.2,1])
                     cylinder(r=2,h=42,center=true);
         cube([1000,1000,2],center=true);
-        translate([501.8,0,0])
+        translate([503.3,0,0])
             cube([1000,1000,1000],center=true);
         translate([0,0,514])
             cube([1000,1000,1000],center=true);
@@ -127,20 +127,20 @@ module nozzle(){
             union(){
                 //hub
                 translate([0,0,-7.5])
-                    scale([1,1,4])
+                    scale([1,1,5])
                         sphere(r=7.5, center=true);
                 //blades
-                translate([0,0,-9])
+                translate([0,0,-9.5])
                     rotate([0,0,0])
-                        scale([1.5,1,1.5])
+                        scale([2,1,2])
                             blade();
-                translate([0,0,-9])
+                translate([0,0,-9.5])
                     rotate([0,0,120])
-                        scale([1.5,1,1.5])
+                        scale([2,1,2])
                             blade();
-                translate([0,0,-9])
+                translate([0,0,-9.5])
                     rotate([0,0,240])
-                        scale([1.5,1,1.5])
+                        scale([2,1,2])
                             blade();
             };
             //hub cavity
