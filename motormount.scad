@@ -65,7 +65,7 @@ module motormount(){
                         cylinder(r=2.5,h=50,center=true);
             };
             //base
-            translate([0,20,2.5])
+            translate([0,18,2.5])
                 cube([205,10,205], center=true);
             //bolt holes
             //to motor
